@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Cafe | Contact & Booking</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">☕ Foodie Cafe</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a class="active" href="contact.html">Contact</a></nav>
+  <button class="theme-toggle" type="button">🌙 Dark mode</button>
+</header>
+<main>
+  <section class="page-heading"><p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p><h1>Contact & Table Booking</h1><p>Send an enquiry or request a table at Foodie Cafe.</p></section>
+  <section class="section contact-layout">
+    <div class="form-panel">
+      <h2>Book your table</h2>
+      <p class="small-note">All fields marked * are required. This demo validates your form in the browser; it does not send a real booking.</p>
+      <form id="bookingForm" novalidate>
+        <div class="form-grid">
+          <label>Full name *<input type="text" name="name" placeholder="Enter your name" required minlength="2"></label>
+          <label>Email address *<input type="email" name="email" placeholder="name@example.com" required></label>
+          <label>Phone number *<input type="tel" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required></label>
+          <label>Booking date *<input type="date" name="date" required></label>
+          <label>Preferred time *<input type="time" name="time" required></label>
+          <label>Number of guests *
+            <select name="guests" required><option value="">Choose guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select>
+          </label>
+          <fieldset class="full-width"><legend>Booking type *</legend>
+            <label class="choice"><input type="radio" name="bookingType" value="Family" required> Family</label>
+            <label class="choice"><input type="radio" name="bookingType" value="Friends"> Friends</label>
+            <label class="choice"><input type="radio" name="bookingType" value="Special occasion"> Special occasion</label>
+          </fieldset>
+          <label class="full-width">Any special request?<textarea name="message" rows="4" placeholder="Tell us if you have any requests..."></textarea></label>
+          <label class="choice full-width"><input type="checkbox" name="terms" required> I confirm that the details above are correct. *</label>
+        </div>
+        <button class="btn" type="submit">Submit booking request</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+    <aside class="contact-info">
+      <h2>Visit our cafe</h2><p>📍 College Road, Nashik, Maharashtra, India</p><p>📞 +91 98765 43210</p><p>✉️ hello@foodiecafe.example</p><p>🕒 Monday – Sunday: 10:00 AM – 10:00 PM</p>
+      <h3>Find us on the map</h3>
+      <iframe title="Map showing Nashik, Maharashtra" src="https://www.google.com/maps?q=Nashik%20Maharashtra&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+  </section>
+</main>
+<footer class="footer"><p>© 2026 Foodie Cafe. Created as a Web Technology college project.</p><p><a href="index.html">Home</a> · <a href="menu.html">Menu</a></p></footer>
+<button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
+</body></html>
